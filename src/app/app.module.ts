@@ -13,7 +13,6 @@ import { importExpr } from '@angular/compiler/src/output/output_ast';
 import { AlertifyService } from './services/alertify.service';
 import { ProductAddForms1Component } from './product/product-add-forms1/product-add-forms1.component';
 import { ProductAddForms2Component } from './product/product-add-forms2/product-add-forms2.component';
-import { FormControl } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,8 +29,7 @@ import { FormControl } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    FormControl
+    ReactiveFormsModule
   ],
   // provider a alertify.service.ts deki root ifadesini silip
   // bunu eklersek yine aynı şey (global) olacaktır. Merkezi bir şekilde
